@@ -1,3 +1,4 @@
+// Skills Images
 import html from "../public/images/skills/html.png";
 import css from "../public/images/skills/css.png";
 import javascript from "../public/images/skills/javascript.png";
@@ -14,6 +15,18 @@ import redux from "../public/images/skills/redux.png";
 import figma from "../public/images/skills/figma.png";
 import api from "../public/images/skills/api.png";
 import github from "../public/images/skills/github.png";
+
+// Project Images
+
+import carent from "../public/images/projects/carent.png";
+import bitcoin from "../public/images/projects/bitcoin.png";
+import google from "../public/images/projects/google.png";
+import hoobank from "../public/images/projects/hoobank.png";
+import metaverse from "../public/images/projects/metaverse.png";
+import mkbhd from "../public/images/projects/mkbhd.png";
+import nike from "../public/images/projects/nike.png";
+import restaurant from "../public/images/projects/restaurant.png";
+import youtube from "../public/images/projects/youtube.png";
 
 export const navLinks = [
   {
@@ -151,7 +164,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: Carent,
+    image: carent,
     source_code_link: "https://github.com/amenyenudaniel/Carent",
     live_demo: "https://carhub-git-master-amenyenudaniel.vercel.app/",
   },
@@ -170,7 +183,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: Youtube,
+    image: youtube,
     source_code_link: "https://github.com/amenyenudaniel/Youtube-Clone",
     live_demo: "https://youtube-clone-website.vercel.app/",
   },
@@ -190,7 +203,7 @@ const projects = [
       },
     ],
 
-    image: Resturant,
+    image: restaurant,
     source_code_link: "https://github.com/amenyenudaniel/Restaurant-Website",
     live_demo: "https://restaurant-website-livid.vercel.app/",
   },
@@ -212,7 +225,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: Nike,
+    image: nike,
     source_code_link: "https://github.com/amenyenudaniel/Nike-Clone",
     live_demo: "https://nike-clone-git-master-amenyenudaniel.vercel.app/",
   },
@@ -231,7 +244,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: MKBHD,
+    image: mkbhd,
     source_code_link: "https://github.com/amenyenudaniel/MKBHD-clone",
     live_demo: "https://mkbhd-clone-web.vercel.app/",
   },
@@ -253,7 +266,7 @@ const projects = [
         color: "blue-text-gradient",
       },
     ],
-    image: Metaverse,
+    image: metaverse,
     source_code_link: "https://github.com/amenyenudaniel/MetaVerse",
     live_demo: "https://metaverse-git-master-amenyenudaniel.vercel.app/",
   },
@@ -274,7 +287,7 @@ const otherProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: Hoobank,
+    image: hoobank,
     source_code_link: "https://github.com/amenyenudaniel/Project-Hoobank",
     live_demo: "https://hoobank-web-navy.vercel.app/",
   },
@@ -293,7 +306,7 @@ const otherProjects = [
         color: "green-text-gradient",
       },
     ],
-    image: Bicoin,
+    image: bitcoin,
     source_code_link: "https://github.com/amenyenudaniel/Crypto",
     live_demo: "https://crypto-web-xi.vercel.app/",
   },
@@ -312,7 +325,7 @@ const otherProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: Google,
+    image: google,
     source_code_link: "https://github.com/amenyenudaniel/Google-Store_clone",
     live_demo: "https://google-store-clone-web.vercel.app/",
   },
@@ -322,7 +335,7 @@ const experiences = [
   {
     title: "Frontend Developer Intern",
     company_name: "HNG Internship",
-    icon: HNGLOGO,
+    // icon: HNGLOGO,
     iconBg: "#383E56",
     date: "August 2023 - November 2023",
     points: [
@@ -337,11 +350,4 @@ const experiences = [
   },
 ];
 
-export {
-  services,
-  technologies,
-  testimonials,
-  projects,
-  otherProjects,
-  experiences,
-};
+export { techSkills, testimonials, projects, otherProjects, experiences };
