@@ -1,6 +1,7 @@
+import { darkmodeProps } from "@/types";
 import React from "react";
 
-const Projects = () => {
+const Projects = ({ darkmode, setDarkmode }: darkmodeProps) => {
   return <div>Projects</div>;
 };
 

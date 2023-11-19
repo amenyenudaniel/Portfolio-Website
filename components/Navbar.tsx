@@ -1,10 +1,13 @@
 "use client";
 import { navLinks } from "@/constants";
+import { darkmodeProps } from "@/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
-const Navbar = () => {
+import Toggle from "./Toggle";
+
+const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -46,7 +49,7 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <div className="text-white">Toggle</div>
+        <Toggle darkmode={darkmode} setDarkmode={setDarkmode} />
         <div className="md:hidden">
           {toggle ? (
             <IoMdClose

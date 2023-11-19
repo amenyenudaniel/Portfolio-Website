@@ -1,6 +1,7 @@
 import { cardNames } from "@/constants";
+import { darkmodeProps } from "@/types";
 
-const About = () => {
+const About = ({ darkmode, setDarkmode }: darkmodeProps) => {
   return (
     <section className="padding" id="about">
       <h3 className="sectionSubText">INTRODUCTION</h3>

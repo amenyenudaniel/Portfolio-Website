@@ -27,6 +27,7 @@ import mkbhd from "../public/images/projects/mkbhd.png";
 import nike from "../public/images/projects/nike.png";
 import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
+import hngLogo from "../public/images/company/HNGLOGO.jpeg";
 
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
@@ -351,7 +352,7 @@ const experiences = [
   {
     title: "Frontend Developer Intern",
     company_name: "HNG Internship",
-    // icon: HNGLOGO,
+    icon: hngLogo,
     iconBg: "#383E56",
     date: "August 2023 - November 2023",
     points: [
