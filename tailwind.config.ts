@@ -1,14 +1,14 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+// tailwind.config.ts
+export default {
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   mode: "jit",
   theme: {
     extend: {
       colors: {
-        primary: "#0a0423",
+        primary: "#0d062a",
         secondary: "#aaa6c3",
-        dark: "#000",
-        white: "#fff",
+        darken: "#000",
+        whiten: "#fff",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -21,5 +21,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-};
+  plugins: [
+    // Include any plugins you may need
+  ],
+} as const;

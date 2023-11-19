@@ -5,7 +5,7 @@ import javascript from "../public/images/skills/javascript.png";
 import typescript from "../public/images/skills/typescript.png";
 import reactjs from "../public/images/skills/reactjs.png";
 import nextjs from "../public/images/skills/nextjs.png";
-import firebase from "../public/images/skills/firebase.png";
+import firebase from "../public/images/skills/firebase.webp";
 import chakra from "../public/images/skills/chakra.png";
 import mui from "../public/images/skills/mui.png";
 import ant from "../public/images/skills/ant.png";
@@ -25,7 +25,7 @@ import hoobank from "../public/images/projects/hoobank.png";
 import metaverse from "../public/images/projects/metaverse.png";
 import mkbhd from "../public/images/projects/mkbhd.png";
 import nike from "../public/images/projects/nike.png";
-import restaurant from "../public/images/projects/restaurant.png";
+import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
 
 export const navLinks = [
@@ -34,8 +34,16 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
 
   {
