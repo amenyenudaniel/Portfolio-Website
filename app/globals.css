@@ -92,6 +92,16 @@
   transition: all 1s ease-in-out;
 }
 
+.height-bg {
+  height: 100vh;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-height: 700px) {
+  .height-bg {
+    height: 100%;
+  }
+}
 @media screen and (max-width: 500px) {
   .blob {
     width: 280px;
