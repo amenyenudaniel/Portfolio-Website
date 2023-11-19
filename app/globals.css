@@ -12,3 +12,36 @@
   margin: 0;
   padding: 0;
 }
+
+.padding {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media screen and (max-width: 1200px) {
+  .padding {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .padding {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

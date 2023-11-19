@@ -16,14 +16,13 @@ export default function Home() {
         <Hero />
         <video
           src="/videos/darkBg.mp4"
-          className="absolute z-1 h-[100vh]"
+          className="absolute z-1 h-[100vh] w-full object-cover"
           autoPlay
           controls={false}
           loop={true}
           muted
         />
       </div>
-
       <About />
       <Experience />
       <Skills />
