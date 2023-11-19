@@ -28,6 +28,14 @@ import nike from "../public/images/projects/nike.png";
 import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
 
+export const cardNames = [
+  { id: 1, title: "Frontend Developer" },
+  { id: 2, title: "JavaScript Developer" },
+  { id: 3, title: "TypeScript Developer" },
+  { id: 4, title: "React JS Developer" },
+  { id: 5, title: "Next JS Developer" },
+];
+
 export const navLinks = [
   {
     id: "about",
