@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`w-full flex items-center justify-between fixed top-0 z-50 padding boxShadow py-4 ${
+        className={`w-full flex items-center justify-between fixed top-0 z-50 paddingNav boxShadow py-4 ${
           scrolled ? "bg-primary" : "bg-transparent"
         }`}
       >

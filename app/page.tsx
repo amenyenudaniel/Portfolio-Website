@@ -10,18 +10,10 @@ import Testimonies from "@/components/Testimonies";
 import Image from "next/image";
 export default function Home() {
   return (
-    <div>
-      <div className="relative z-10 h-[100vh]">
+    <div className="relative">
+      <div className="h-[100vh]">
         <Navbar />
         <Hero />
-        <video
-          src="/videos/darkBg.mp4"
-          className="absolute z-1 h-[100vh] w-full object-cover"
-          autoPlay
-          controls={false}
-          loop={true}
-          muted
-        />
       </div>
       <About />
       <Experience />
@@ -30,6 +22,14 @@ export default function Home() {
       <Certificate />
       <Testimonies />
       <Contact />
+      <video
+        src="/videos/darkBg.mp4"
+        className="absolute z-[-1] h-[100vh] top-0 w-full object-cover"
+        autoPlay
+        controls={false}
+        loop={true}
+        muted
+      />
     </div>
   );
 }
