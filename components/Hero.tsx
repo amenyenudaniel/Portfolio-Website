@@ -16,6 +16,9 @@ const Hero = () => {
             I develop user interfaces and <br />
             web applications
           </p>
+          <button className="h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-secondary mt-[20px] hover:bg-secondary">
+            Download CV
+          </button>
         </div>
       </div>
       <div className="blob"></div>
