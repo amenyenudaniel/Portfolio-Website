@@ -9,6 +9,8 @@ export default {
         secondary: "#aaa6c3",
         darken: "#000",
         whiten: "#fff",
+        gray: "#E1E0E2",
+        violet: "#915EFF",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

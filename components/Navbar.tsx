@@ -27,13 +27,31 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
   return (
     <div>
       <nav
-        className={`w-full flex items-center justify-between fixed top-0 z-50 paddingNav boxShadow py-4 ${
-          scrolled ? "bg-primary" : "bg-transparent"
-        }`}
+        className={
+          darkmode
+            ? `w-full flex items-center justify-between fixed top-0 z-50 paddingNav boxShadow py-4 ${
+                scrolled ? "bg-primary" : "bg-transparent"
+              }`
+            : `w-full flex items-center justify-between fixed top-0 z-50 paddingNav boxShadow py-4 ${
+                scrolled ? "bg-white" : "bg-transparent"
+              }`
+        }
       >
         <Link href={"/"} className="boxShadow flex gap-[10px] items-center">
-          <div className="w-[30px] h-[30px] rounded-full bg-secondary "></div>
-          <h2 className="text-whiten text-[18px] font-bold cursor-pointer">
+          <div
+            className={
+              darkmode
+                ? "w-[30px] h-[30px] rounded-full bg-secondary"
+                : "w-[30px] h-[30px] rounded-full bg-violet"
+            }
+          ></div>
+          <h2
+            className={
+              darkmode
+                ? "text-whiten text-[18px] font-bold cursor-pointer"
+                : "text-primary text-[18px] font-bold cursor-pointer"
+            }
+          >
             Portfolio
           </h2>
         </Link>
@@ -43,7 +61,11 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
             <a
               href={`#${link.id}`}
               key={link.id}
-              className="text-secondary hover:text-white text-[19px] font-medium cursor-pointer"
+              className={
+                darkmode
+                  ? "text-secondary hover:text-white text-[19px] font-medium cursor-pointer"
+                  : "text-black hover:text-violet text-[19px] font-medium cursor-pointer"
+              }
             >
               {link.title}
             </a>
@@ -53,12 +75,20 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
         <div className="md:hidden">
           {toggle ? (
             <IoMdClose
-              className="text-[1.5rem] fill-white cursor-pointer"
+              className={
+                darkmode
+                  ? "text-[1.5rem] fill-white cursor-pointer"
+                  : "text-[1.5rem] fill-black cursor-pointer"
+              }
               onClick={() => setToggle(!toggle)}
             />
           ) : (
             <MdMenu
-              className="text-[1.5rem] fill-white cursor-pointer"
+              className={
+                darkmode
+                  ? "text-[1.5rem] fill-white cursor-pointer"
+                  : "text-[1.5rem] fill-black cursor-pointer"
+              }
               onClick={() => setToggle(!toggle)}
             />
           )}

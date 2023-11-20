@@ -26,14 +26,25 @@ export default function Home() {
       <Certificate darkmode={darkmode} setDarkmode={setDarkmode} />
       <Testimonies darkmode={darkmode} setDarkmode={setDarkmode} />
       <Contact darkmode={darkmode} setDarkmode={setDarkmode} />
-      <video
-        src="/videos/darkBg.mp4"
-        className="absolute z-[-1] h-[100vh] top-0 w-full object-cover"
-        autoPlay
-        controls={false}
-        loop={true}
-        muted
-      />
+      {darkmode ? (
+        <video
+          src="/videos/darkBg.mp4"
+          className="absolute z-[-1] h-[100vh] top-0 w-full object-cover"
+          autoPlay
+          controls={false}
+          loop={true}
+          muted
+        />
+      ) : (
+        <video
+          src="/videos/whiteBg.mp4"
+          className="absolute z-[-1] h-[100vh] top-0 w-full object-cover"
+          autoPlay
+          controls={false}
+          loop={true}
+          muted
+        />
+      )}
     </div>
   );
 }
