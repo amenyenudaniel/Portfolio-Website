@@ -9,7 +9,7 @@ export default {
         secondary: "#aaa6c3",
         darken: "#000",
         whiten: "#fff",
-        gray: "#E1E0E2",
+        gray: "#E8E7E9",
         violet: "#915EFF",
       },
       boxShadow: {

@@ -10,5 +10,5 @@ export interface experienceProps {
 type SetDarkmodeFunction = (value: boolean) => void;
 export interface darkmodeProps {
   darkmode: boolean;
-  setDarkmode: SetDarkmodeFunction;
+  setDarkmode?: SetDarkmodeFunction;
 }

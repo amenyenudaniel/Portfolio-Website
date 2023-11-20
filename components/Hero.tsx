@@ -1,7 +1,7 @@
 import { darkmodeProps } from "@/types";
 import React from "react";
 
-const Hero = ({ darkmode, setDarkmode }: darkmodeProps) => {
+const Hero = ({ darkmode }: darkmodeProps) => {
   return (
     <section className="z-30 flex flex-col lg:flex-row justify-between items-center padding pt-[10rem] lg:pt-[20%]">
       <div className="flex ">

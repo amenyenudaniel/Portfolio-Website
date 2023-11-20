@@ -14,37 +14,39 @@ import { useState } from "react";
 export default function Home() {
   const [darkmode, setDarkmode] = useState<boolean>(true);
   return (
-    <div className="relative">
-      <div className="height-bg">
+    <>
+      <div className="height-bg relative">
         <Navbar darkmode={darkmode} setDarkmode={setDarkmode} />
-        <Hero darkmode={darkmode} setDarkmode={setDarkmode} />
+        <Hero darkmode={darkmode} />
+        {darkmode ? (
+          <video
+            src="/videos/darkBg.mp4"
+            className="absolute z-[-1] h-[100%] top-0 w-full object-cover"
+            autoPlay
+            controls={false}
+            loop={true}
+            muted
+          />
+        ) : (
+          <video
+            src="/videos/whiteBg.mp4"
+            className="absolute z-[-1] h-[100%] top-0 w-full object-cover"
+            autoPlay
+            controls={false}
+            loop={true}
+            muted
+          />
+        )}
       </div>
-      <About darkmode={darkmode} setDarkmode={setDarkmode} />
-      <Experience darkmode={darkmode} setDarkmode={setDarkmode} />
-      <Skills darkmode={darkmode} setDarkmode={setDarkmode} />
-      <Projects darkmode={darkmode} setDarkmode={setDarkmode} />
-      <Certificate darkmode={darkmode} setDarkmode={setDarkmode} />
-      <Testimonies darkmode={darkmode} setDarkmode={setDarkmode} />
-      <Contact darkmode={darkmode} setDarkmode={setDarkmode} />
-      {darkmode ? (
-        <video
-          src="/videos/darkBg.mp4"
-          className="absolute z-[-1] h-[100vh] top-0 w-full object-cover"
-          autoPlay
-          controls={false}
-          loop={true}
-          muted
-        />
-      ) : (
-        <video
-          src="/videos/whiteBg.mp4"
-          className="absolute z-[-1] h-[100vh] top-0 w-full object-cover"
-          autoPlay
-          controls={false}
-          loop={true}
-          muted
-        />
-      )}
-    </div>
+      <div className={darkmode ? "bg-darken" : "bg-gray"}>
+        <About darkmode={darkmode} />
+        <Experience darkmode={darkmode} />
+        <Skills darkmode={darkmode} />
+        <Projects darkmode={darkmode} />
+        <Certificate darkmode={darkmode} />
+        <Testimonies darkmode={darkmode} />
+        <Contact darkmode={darkmode} />
+      </div>
+    </>
   );
 }
