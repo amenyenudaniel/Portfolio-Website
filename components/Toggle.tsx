@@ -1,5 +1,3 @@
-import { useState } from "react";
-import "./toggle.css";
 import { darkmodeProps } from "@/types";
 
 const Toggle = ({ darkmode, setDarkmode }: darkmodeProps) => {
