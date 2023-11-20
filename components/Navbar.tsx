@@ -63,8 +63,8 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
               key={link.id}
               className={
                 darkmode
-                  ? "text-secondary hover:text-white text-[19px] font-medium cursor-pointer"
-                  : "text-black hover:text-violet text-[19px] font-medium cursor-pointer"
+                  ? "text-white hover:text-secondary text-[19px] font-medium cursor-pointer transition ease-out duration-700"
+                  : "text-black hover:text-violet text-[19px] font-medium cursor-pointer transition ease-out duration-700"
               }
             >
               {link.title}

@@ -13,11 +13,23 @@ const Hero = ({ darkmode, setDarkmode }: darkmodeProps) => {
           <h1 className="heroHeadText">
             Hi, I'm <span className="text-[#915EFF]">Daniel</span>
           </h1>
-          <p className="heroSubText mt-2 text-white-100">
+          <p
+            className={
+              darkmode
+                ? "heroSubText mt-2  text-[#dfd9ff]"
+                : "heroSubText mt-2 text-primary"
+            }
+          >
             I develop user interfaces and <br />
             web applications
           </p>
-          <button className="h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-secondary mt-[20px] hover:bg-secondary">
+          <button
+            className={
+              darkmode
+                ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
+                : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
+            }
+          >
             Download CV
           </button>
         </div>
