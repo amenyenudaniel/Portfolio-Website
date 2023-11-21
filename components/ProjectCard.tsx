@@ -44,8 +44,8 @@ const ProjectCard: React.FC<projectProps> = ({
       <div
         className={
           darkmode
-            ? "bg-primary p-5 rounded-2xl sm:w-[360px] w-full "
-            : "bg-white p-5 rounded-2xl sm:w-[360px] w-full "
+            ? "bg-white p-5 rounded-2xl sm:w-[360px] w-full "
+            : "bg-primary p-5 rounded-2xl sm:w-[360px] w-full "
         }
       >
         <div className="relative w-full h-[240px] skills-card">
@@ -59,8 +59,8 @@ const ProjectCard: React.FC<projectProps> = ({
           <h3
             className={
               darkmode
-                ? "text-white font-bold text-[24px]"
-                : "text-primary font-bold text-[24px]"
+                ? "text-primary font-bold text-[24px]"
+                : "text-white font-bold text-[24px]"
             }
           >
             {name}
@@ -68,8 +68,8 @@ const ProjectCard: React.FC<projectProps> = ({
           <p
             className={
               darkmode
-                ? "mt-2 text-secondary text-[14px]"
-                : "mt-2 text-black text-[14px]"
+                ? "mt-2 text-black text-[14px]"
+                : "mt-2 text-secondary text-[14px]"
             }
           >
             {description}
@@ -90,8 +90,8 @@ const ProjectCard: React.FC<projectProps> = ({
             type="button"
             className={
               darkmode
-                ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
-                : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-in duration-100"
+                ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-primary mt-[20px] hover:bg-primary hover:text-white transition ease-out duration-700"
+                : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-in duration-100"
             }
           >
             <a href={live_demo} target="_blank" rel="noopener noreferrer">
@@ -102,8 +102,8 @@ const ProjectCard: React.FC<projectProps> = ({
             type="button"
             className={
               darkmode
-                ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
-                : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-in duration-100"
+                ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-primary mt-[20px] hover:bg-primary hover:text-white transition ease-out duration-700"
+                : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-in duration-100"
             }
           >
             <a

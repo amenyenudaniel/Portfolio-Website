@@ -74,8 +74,8 @@ const Skills = ({ darkmode }: darkmodeProps) => {
             <div
               className={
                 darkmode
-                  ? "w-[300px] h-[300px] bg-primary flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
-                  : "w-[300px] h-[300px] bg-white flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
+                  ? "w-[300px] h-[300px] bg-white flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
+                  : "w-[300px] h-[300px] bg-primary flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
               }
             >
               <Image
@@ -85,7 +85,9 @@ const Skills = ({ darkmode }: darkmodeProps) => {
               />
               <h2
                 className={
-                  darkmode ? "text-white text-[20px]" : "text-black text-[20px]"
+                  darkmode
+                    ? "text-primary text-[20px] font-bold"
+                    : "text-white text-[20px] font-bold"
                 }
               >
                 {skill.name}
