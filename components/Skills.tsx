@@ -13,7 +13,7 @@ const Skills = ({ darkmode }: darkmodeProps) => {
   const isDarkMode = true; // Replace with your dark mode state
 
   return (
-    <div className="padding pt-[10rem] " id="skills">
+    <div className="padding pt-[8rem] " id="skills">
       <div className="mb-[2rem]">
         <h3
           className={
