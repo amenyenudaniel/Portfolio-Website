@@ -85,7 +85,7 @@ const ProjectCard: React.FC<projectProps> = ({
             </p>
           ))}
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between flex-wrap">
           <button
             type="button"
             className={

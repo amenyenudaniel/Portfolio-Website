@@ -21,7 +21,11 @@ const Certificate = ({ darkmode, setDarkmode }: darkmodeProps) => {
       <div className="flex flex-col justify-center items-center gap-[4rem]">
         {certificatesData.map((cert) => (
           <div>
-            <Image src={cert.image} alt="certificate__img" className="w-full" />
+            <Image
+              src={cert.image}
+              alt="certificate__img"
+              className="w-full rounded-2xl"
+            />
             <h2
               className={
                 darkmode
@@ -45,11 +49,11 @@ const Certificate = ({ darkmode, setDarkmode }: darkmodeProps) => {
                 type="button"
                 className={
                   darkmode
-                    ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-white mt-[20px] hover:bg-white hover:text-primary transition ease-out duration-700 font-bold"
+                    ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-secondary border-2 border-secondary mt-[20px] hover:bg-secondary hover:text-white transition ease-out duration-700 font-bold"
                     : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-primary mt-[20px] hover:bg-primary hover:text-white transition ease-in duration-100"
                 }
               >
-                View
+                View Certificate
               </button>
             </a>
           </div>

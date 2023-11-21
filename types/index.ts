@@ -23,3 +23,11 @@ export interface projectProps {
   live_demo: string;
   darkmode: boolean;
 }
+
+export interface testimonialsProps {
+  testimonial: string;
+  name: string;
+  designation: string;
+  company: string;
+  darkmode: boolean;
+}

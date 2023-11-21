@@ -148,7 +148,7 @@ const Projects = ({ darkmode }: darkmodeProps) => {
 
             <Link href="/other">
               <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}>
-                <div className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full  mt-[2rem]">
                   <div className="relative w-full h-[240px]">
                     <Image
                       src={otherPP}
@@ -223,7 +223,7 @@ const Projects = ({ darkmode }: darkmodeProps) => {
 
             <Link href="/other">
               <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}>
-                <div className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full">
+                <div className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full mt-[2rem]">
                   <div className="relative w-full h-[240px]">
                     <Image
                       src={otherPP}
