@@ -88,8 +88,8 @@ const Projects = ({ darkmode }: darkmodeProps) => {
                 variants={fadeIn("", "", 0.1, 1)}
                 className={
                   darkmode
-                    ? "mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] mb-[3rem]"
-                    : "mt-3 text-black text-[17px] max-w-3xl leading-[30px] mb-[3rem]"
+                    ? "mt-3 text-secondary text-[18px] max-w-3xl leading-[30px] mb-[3rem]"
+                    : "mt-3 text-black text-[18px] max-w-3xl leading-[30px] mb-[3rem]"
                 }
               >
                 Following projects showcase my skills and experience through

@@ -1,4 +1,5 @@
 // Skills Images
+
 import html from "../public/images/skills/html.png";
 import css from "../public/images/skills/css.png";
 import javascript from "../public/images/skills/javascript.png";
@@ -29,6 +30,10 @@ import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
 import hngLogo from "../public/images/company/HNGLOGO.jpeg";
 
+// Certificates
+
+import meta from "../public/images/certificates/cert1.png";
+import hng from "../public/images/certificates/cert2.jpeg";
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
   { id: 2, title: "JavaScript Developer" },
@@ -392,6 +397,22 @@ export const softSKills = [
     title: "Team Collaboration",
     content:
       "I am a collaborative and supportive team member, contributing positively to group dynamics while respecting diverse perspectives.",
+  },
+];
+
+export const certificatesData = [
+  {
+    title: "Meta Frontend Developer Certificates",
+    content: "Coursera",
+    image: meta,
+    view: "pdf/pdf-cert.pdf",
+  },
+
+  {
+    title: "HNG Finalist Certificate",
+    content: "HNG Internship",
+    image: hng,
+    view: "/images/certificates/cert2.jpeg",
   },
 ];
 export { techSkills, testimonials, projects, otherProjects, experiences };

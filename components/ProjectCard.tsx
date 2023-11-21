@@ -44,8 +44,8 @@ const ProjectCard: React.FC<projectProps> = ({
       <div
         className={
           darkmode
-            ? "bg-white p-5 rounded-2xl sm:w-[360px] w-full "
-            : "bg-primary p-5 rounded-2xl sm:w-[360px] w-full "
+            ? "bg-white p-5 rounded-2xl sm:w-[360px] w-full boxShadow"
+            : "bg-primary p-5 rounded-2xl sm:w-[360px] w-full boxShadow"
         }
       >
         <div className="relative w-full h-[240px] skills-card">
