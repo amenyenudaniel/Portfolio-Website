@@ -3,12 +3,12 @@ import { darkmodeProps } from "@/types";
 
 const About = ({ darkmode }: darkmodeProps) => {
   return (
-    <section className="padding" id="about">
+    <section className="padding pt-[10rem]" id="about">
       <h3
         className={
           darkmode
             ? "sectionSubText text-secondary"
-            : "sectionSubText text-violet pt-[4rem]"
+            : "sectionSubText text-violet "
         }
       >
         INTRODUCTION

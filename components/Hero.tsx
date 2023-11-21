@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = ({ darkmode }: darkmodeProps) => {
   return (
-    <section className="z-30 flex flex-col lg:flex-row justify-between items-center padding pt-[10rem] lg:pt-[20%]">
+    <section className="z-30 flex gap-[4rem] lg:gap-[0rem] flex-col lg:flex-row justify-between items-center padding pt-[10rem] lg:pt-[20%]">
       <div className="flex ">
         <div className="flex flex-col justify-center items-center ">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />

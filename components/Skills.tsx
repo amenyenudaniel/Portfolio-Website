@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { techSkills } from "@/constants";
+import { softSKills, techSkills } from "@/constants";
 import Image from "next/image";
 import { darkmodeProps } from "@/types";
 
@@ -13,7 +13,7 @@ const Skills = ({ darkmode }: darkmodeProps) => {
   const isDarkMode = true; // Replace with your dark mode state
 
   return (
-    <div className="padding mt-[3rem]">
+    <div className="padding pt-[10rem] " id="skills">
       <div className="mb-[2rem]">
         <h3
           className={
@@ -73,16 +73,22 @@ const Skills = ({ darkmode }: darkmodeProps) => {
       >
         {techSkills.map((skill) => (
           <SwiperSlide key={skill.name}>
-            <div className="w-[300px] h-[300px] bg-primary flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem]">
+            <div
+              className={
+                darkmode
+                  ? "w-[300px] h-[300px] bg-primary flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
+                  : "w-[300px] h-[300px] bg-white flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
+              }
+            >
               <Image
                 src={skill.icon}
                 alt="image"
-                className="w-[200px] h-[200px]"
+                className="w-[200px] h-[200px] image-card"
               />
               <h2
-                className={`text-${
-                  isDarkMode ? "white" : "black"
-                } text-[20px] font-medium`}
+                className={
+                  darkmode ? "text-white text-[20px]" : "text-black text-[20px]"
+                }
               >
                 {skill.name}
               </h2>
@@ -94,16 +100,36 @@ const Skills = ({ darkmode }: darkmodeProps) => {
       <h1
         className={
           darkmode
-            ? "sectionHeadText text-white"
-            : "sectionHeadText text-darken"
+            ? "sectionHeadText text-white mb-[1rem]"
+            : "sectionHeadText text-darken mb-[1rem]"
         }
       >
         Soft Skills
       </h1>
-
-      <ul>
-       
-      </ul>
+      <div className="flex flex-col gap-[1rem]">
+        {softSKills.map((item) => (
+          <div key={item.title}>
+            <h3
+              className={
+                darkmode
+                  ? "text-white font-bold text-[20px]"
+                  : "text-black font-bold text-[20px]"
+              }
+            >
+              {item.title}:
+            </h3>
+            <p
+              className={
+                darkmode
+                  ? "text-secondary font-medium text-[18px]"
+                  : "text-primary font-medium text-[18px]"
+              }
+            >
+              {item.content}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

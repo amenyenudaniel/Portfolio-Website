@@ -367,4 +367,31 @@ const experiences = [
   },
 ];
 
+export const softSKills = [
+  {
+    title: "Effective Communication",
+    content:
+      "I excel in conveying technical concepts to both technical and non-technical stakeholders, fostering clear collaboration.",
+  },
+  {
+    title: "Adaptability",
+    content:
+      "I am quick to embrace new technologies and methodologies, ensuring versatility in handling dynamic project requirements.",
+  },
+  {
+    title: "Problem-Solving",
+    content:
+      "I am adept at identifying and resolving issues, employing a systematic approach to troubleshoot and optimize code.",
+  },
+  {
+    title: "Attention to Detail",
+    content:
+      "I am meticulous in crafting clean, efficient, and maintainable code, prioritizing quality in every aspect of development.",
+  },
+  {
+    title: "Team Collaboration",
+    content:
+      "I am a collaborative and supportive team member, contributing positively to group dynamics while respecting diverse perspectives.",
+  },
+];
 export { techSkills, testimonials, projects, otherProjects, experiences };

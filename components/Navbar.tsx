@@ -1,8 +1,8 @@
-"use client";
 import { navLinks } from "@/constants";
 import { darkmodeProps } from "@/types";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import Toggle from "./Toggle";
@@ -10,23 +10,31 @@ import Toggle from "./Toggle";
 const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+  const controls = useAnimation();
 
-    window.addEventListener("scroll", handleScroll);
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 100) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  window.addEventListener("scroll", handleScroll);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+    controls.start({
+      opacity: 1,
+      transition: { duration: 0.5 },
+    });
+  };
+
   return (
     <div>
-      <nav
+      <motion.nav
+        animate={controls}
         className={
           darkmode
             ? `w-full flex items-center justify-between fixed top-0 z-50 paddingNav boxShadow py-4 ${
@@ -80,7 +88,7 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
                   ? "text-[1.5rem] fill-white cursor-pointer"
                   : "text-[1.5rem] fill-black cursor-pointer"
               }
-              onClick={() => setToggle(!toggle)}
+              onClick={handleToggle}
             />
           ) : (
             <MdMenu
@@ -89,11 +97,11 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
                   ? "text-[1.5rem] fill-white cursor-pointer"
                   : "text-[1.5rem] fill-black cursor-pointer"
               }
-              onClick={() => setToggle(!toggle)}
+              onClick={handleToggle}
             />
           )}
         </div>
-      </nav>
+      </motion.nav>
       {toggle && (
         <div className="md:hidden fixed top-[70px] bg-primary z-40 right-[60px] w-[150px] py-[20px] px-[20px] rounded-2xl ">
           <ul className="list-none flex items-start flex-1 flex-col gap-4">
