@@ -10,8 +10,6 @@ import Image from "next/image";
 import { darkmodeProps } from "@/types";
 
 const Skills = ({ darkmode }: darkmodeProps) => {
-  const isDarkMode = true; // Replace with your dark mode state
-
   return (
     <div className="padding pt-[8rem] " id="skills">
       <div className="mb-[2rem]">
