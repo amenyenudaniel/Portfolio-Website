@@ -145,26 +145,6 @@ const Projects = ({ darkmode }: darkmodeProps) => {
                 ))}
               </div>
             </Swiper>
-
-            <Link href="/other">
-              <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}>
-                <div className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full  mt-[2rem]">
-                  <div className="relative w-full h-[240px]">
-                    <Image
-                      src={otherPP}
-                      alt="project_image"
-                      className="w-full h-full object-cover rounded-2xl"
-                    />
-                  </div>
-
-                  <div className="mt-5">
-                    <h3 className="text-white font-bold text-[24px]">
-                      Other Projects
-                    </h3>
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
           </div>
         </div>
       </div>
@@ -220,26 +200,6 @@ const Projects = ({ darkmode }: darkmodeProps) => {
                 />
               ))}
             </div>
-
-            <Link href="/other">
-              <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}>
-                <div className="bg-primary p-5 rounded-2xl sm:w-[360px] w-full mt-[2rem]">
-                  <div className="relative w-full h-[240px]">
-                    <Image
-                      src={otherPP}
-                      alt="project_image"
-                      className="w-full h-full object-cover rounded-2xl"
-                    />
-                  </div>
-
-                  <div className="mt-5">
-                    <h3 className="text-white font-bold text-[24px]">
-                      Other Projects
-                    </h3>
-                  </div>
-                </div>
-              </motion.div>
-            </Link>
           </div>
         </div>
       </div>

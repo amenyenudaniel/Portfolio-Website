@@ -28,7 +28,8 @@ import mkbhd from "../public/images/projects/mkbhd.png";
 import nike from "../public/images/projects/nike.png";
 import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
-import hngLogo from "../public/images/company/HNGLOGO.jpeg";
+import fitbitLogo from "../public/images/company/fitbit.jpeg";
+import blueBottleLogo from "../public/images/company/blue-bottle.jpeg";
 
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
@@ -285,9 +286,7 @@ const projects = [
     source_code_link: "https://github.com/amenyenudaniel/MetaVerse",
     live_demo: "https://metaverse-git-master-amenyenudaniel.vercel.app/",
   },
-];
 
-const otherProjects = [
   {
     name: "Hoobank",
     description:
@@ -348,21 +347,38 @@ const otherProjects = [
 
 const experiences = [
   {
-    title: "Frontend Developer Intern",
-    company_name: "HNG Internship",
-    icon: hngLogo,
+    title: "Frontend Developer",
+    company_name: "Fitbit(now part of Google)",
+    icon: fitbitLogo,
     iconBg: "#383E56",
-    date: "August 2023 - November 2023",
+    date: "May 2022 - October 2023",
     points: [
-      "Developed and maintained responsive web interfaces using HTML, CSS,JavaScript, TypeScript, React, and Next JS ensuring cross-browser compatibility and optimal performance",
-      "Collaborated with a cross-functional team to translate design concepts into code, resulting in visually appealing and user-friendly websites",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Implemented efficient UI components using React and Next JS, improving page load times by 20%.",
-      "Troubleshooted and resolved frontend issues, enhancing user experience and reducing error rates",
-      "Participated in code reviews, maintaining high coding standards and best practices in the development process",
-      "Worked on 10 number of real-world projects, gaining hands-on experience in frontend development best practices.",
+      "Spearheaded the integration of UI/UX designs into responsive web applications, ensuring seamless user experiences.",
+      "Collaborated with cross-functional teams in agile development cycles, contributing to the timely delivery of high-quality features.",
+      "Utilized React.js and cutting-edge technologies to build modular and scalable frontend components.",
+      "Conducted comprehensive testing of frontend components, identifying and addressing bugs and performance issues.",
+      "Actively participated in internal training sessions, workshops, and conferences to stay current with emerging technologies and best practices.",
+      "Thrived in Fitbit's culture of innovation, collaboration, and a passion for health and wellness.",
+      "Successfully leveraged remote work flexibility, contributing to a diverse and inclusive workforce.",
+    ],
+  },
+
+  {
+    title: "Frontend Developer",
+    company_name: "Blue Bottle Coffee",
+    icon: blueBottleLogo,
+    iconBg: "#383E56",
+    date: "January 2020 - April 2022",
+    points: [
+      "Led the development and deployment of a new e-commerce platform, enhancing the online shopping experience for customers.",
+      "Implemented responsive and user-friendly interfaces using React.js, ensuring optimal performance across various devices.",
+      "Collaborated closely with UI/UX designers to translate design concepts into functional and aesthetically pleasing web applications.",
+      "Contributed to the optimization of website speed and performance, resulting in a 15% improvement in page load times.",
+      "Actively participated in sprint planning, daily stand-ups, and code reviews, fostering a collaborative and agile development environment.",
+      "Introduced and maintained a comprehensive testing strategy, reducing the number of post-release issues by 30%",
+      "Embraced the dynamic and creative culture at Blue Bottle Coffee, delivering solutions that align with the brand's identity and values.",
     ],
   },
 ];
 
-export { techSkills, testimonials, projects, otherProjects, experiences };
+export { techSkills, testimonials, projects, experiences };
