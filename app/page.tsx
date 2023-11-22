@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import About from "@/components/About";
-import Certificate from "@/components/Certificate";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
@@ -47,7 +46,6 @@ export default function Home() {
         <Experience darkmode={darkmode} />
         <Skills darkmode={darkmode} />
         <Projects darkmode={darkmode} />
-        <Certificate darkmode={darkmode} />
         <Testimonies darkmode={darkmode} />
         <Contact darkmode={darkmode} />
         <Footer darkmode={darkmode} />

@@ -31,3 +31,10 @@ export interface testimonialsProps {
   company: string;
   darkmode: boolean;
 }
+
+export interface slideInProps {
+  direction: string;
+  type: string;
+  delay: number;
+  duration: number;
+}

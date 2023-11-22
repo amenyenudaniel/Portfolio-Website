@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { softSKills, techSkills } from "@/constants";
+import { techSkills } from "@/constants";
 import Image from "next/image";
 import { darkmodeProps } from "@/types";
 
@@ -96,40 +96,6 @@ const Skills = ({ darkmode }: darkmodeProps) => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <h1
-        className={
-          darkmode
-            ? "sectionHeadText text-white mb-[1rem]"
-            : "sectionHeadText text-darken mb-[1rem]"
-        }
-      >
-        Soft Skills
-      </h1>
-      <div className="flex flex-col gap-[1rem]">
-        {softSKills.map((item) => (
-          <div key={item.title}>
-            <h3
-              className={
-                darkmode
-                  ? "text-white font-bold text-[20px]"
-                  : "text-black font-bold text-[20px]"
-              }
-            >
-              {item.title}:
-            </h3>
-            <p
-              className={
-                darkmode
-                  ? "text-secondary font-medium text-[18px]"
-                  : "text-primary font-medium text-[18px]"
-              }
-            >
-              {item.content}
-            </p>
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

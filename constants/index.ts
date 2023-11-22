@@ -30,10 +30,6 @@ import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
 import hngLogo from "../public/images/company/HNGLOGO.jpeg";
 
-// Certificates
-
-import meta from "../public/images/certificates/cert1.png";
-import hng from "../public/images/certificates/cert2.jpeg";
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
   { id: 2, title: "JavaScript Developer" },
@@ -140,25 +136,22 @@ const testimonials = [
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Danny proved me wrong.",
     name: "Anne leya",
-    designation: "Client",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    designation: "Tech Lead",
+    company: "Fitbit",
   },
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like Danny does.",
     name: "William Malachy",
     designation: "Mentor",
-    company: "Hng Internship",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    company: "Fitbit",
   },
   {
     testimonial:
       "After Danny optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Chinaza Obiekwe",
+    name: "David Williams",
     designation: "Program Coordinator",
-    company: "HNG Internship",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "Blue Bottle Coffee",
   },
 ];
 
@@ -372,47 +365,4 @@ const experiences = [
   },
 ];
 
-export const softSKills = [
-  {
-    title: "Effective Communication",
-    content:
-      "I excel in conveying technical concepts to both technical and non-technical stakeholders, fostering clear collaboration.",
-  },
-  {
-    title: "Adaptability",
-    content:
-      "I am quick to embrace new technologies and methodologies, ensuring versatility in handling dynamic project requirements.",
-  },
-  {
-    title: "Problem-Solving",
-    content:
-      "I am adept at identifying and resolving issues, employing a systematic approach to troubleshoot and optimize code.",
-  },
-  {
-    title: "Attention to Detail",
-    content:
-      "I am meticulous in crafting clean, efficient, and maintainable code, prioritizing quality in every aspect of development.",
-  },
-  {
-    title: "Team Collaboration",
-    content:
-      "I am a collaborative and supportive team member, contributing positively to group dynamics while respecting diverse perspectives.",
-  },
-];
-
-export const certificatesData = [
-  {
-    title: "Meta Frontend Developer Certificates",
-    content: "Coursera",
-    image: meta,
-    view: "pdf/pdf-cert.pdf",
-  },
-
-  {
-    title: "HNG Finalist Certificate",
-    content: "HNG Internship",
-    image: hng,
-    view: "/images/certificates/cert2.jpeg",
-  },
-];
 export { techSkills, testimonials, projects, otherProjects, experiences };
