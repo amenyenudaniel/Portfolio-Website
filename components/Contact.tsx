@@ -106,7 +106,7 @@ const Contact = ({ darkmode }: darkmodeProps) => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-bold text-[18px]"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-bold text-[16px]"
             />
           </label>
           <label className="flex flex-col">
@@ -118,7 +118,7 @@ const Contact = ({ darkmode }: darkmodeProps) => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-bold text-[18px]"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-bold text-[16px]"
             />
           </label>
           <label className="flex flex-col">
@@ -130,7 +130,7 @@ const Contact = ({ darkmode }: darkmodeProps) => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-bold text-[18px]"
+              className="bg-white py-4 px-6 placeholder:text-secondary text-primary rounded-lg outline-none border-none font-bold text-[16px]"
             />
           </label>
 
