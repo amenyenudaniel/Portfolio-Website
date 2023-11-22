@@ -16,6 +16,7 @@ import redux from "../public/images/skills/redux.png";
 import figma from "../public/images/skills/figma.png";
 import api from "../public/images/skills/api.png";
 import github from "../public/images/skills/github.png";
+import hngLogo from "../public/images/company/HNGLOGO.jpeg";
 
 // Project Images
 
@@ -28,8 +29,6 @@ import mkbhd from "../public/images/projects/mkbhd.png";
 import nike from "../public/images/projects/nike.png";
 import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
-import fitbitLogo from "../public/images/company/fitbit.jpeg";
-import blueBottleLogo from "../public/images/company/blue-bottle.jpeg";
 
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
@@ -63,7 +62,7 @@ export const navLinks = [
   },
 ];
 
-const techSkills = [
+export const techSkills = [
   {
     name: "HTML",
     icon: html,
@@ -132,31 +131,31 @@ const techSkills = [
   },
 ];
 
-const testimonials = [
+export const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Danny proved me wrong.",
-    name: "Anne leya",
-    designation: "Tech Lead",
-    company: "Fitbit",
+      "Exceptional frontend work! Danny at HNG Internship crafts stunning designs with precision, exceeding expectations consistently. A top-tier developer",
+    name: "Chinaza Obiekwe",
+    designation: "IT Project Manager at Compound",
+    company: "HNG Internship",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Danny does.",
-    name: "William Malachy",
-    designation: "Mentor",
-    company: "Fitbit",
+      "Impressive frontend prowess! Danny excels in HTML, CSS, and JS, TS, transforming concepts into user-friendly interfaces seamlessly. A highly recommended developer!",
+    name: "Angel Daniels",
+    designation: "Client",
+    company: "Client",
   },
   {
     testimonial:
-      "After Danny optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "David Williams",
-    designation: "Program Coordinator",
-    company: "Blue Bottle Coffee",
+      "Outstanding at HNG Internship! Danny delivers clean, efficient code, elevating user experiences. A rare talent with both technical excellence and design flair",
+    name: "Malachy Williams",
+    designation: "Cloud DevOps Engineer",
+    company: "HNG Internship",
   },
 ];
 
-const projects = [
+export const projects = [
   {
     name: "Car Rent",
     description:
@@ -344,41 +343,41 @@ const projects = [
     live_demo: "https://google-store-clone-web.vercel.app/",
   },
 ];
-
-const experiences = [
+export const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "Fitbit(now part of Google)",
-    icon: fitbitLogo,
+    title: "Frontend Developer Intern",
+    company_name: "HNG Company",
+    icon: hngLogo,
     iconBg: "#383E56",
-    date: "May 2022 - October 2023",
+    date: "August 2023 - November 2023",
     points: [
-      "Spearheaded the integration of UI/UX designs into responsive web applications, ensuring seamless user experiences.",
-      "Collaborated with cross-functional teams in agile development cycles, contributing to the timely delivery of high-quality features.",
-      "Utilized React.js and cutting-edge technologies to build modular and scalable frontend components.",
-      "Conducted comprehensive testing of frontend components, identifying and addressing bugs and performance issues.",
-      "Actively participated in internal training sessions, workshops, and conferences to stay current with emerging technologies and best practices.",
-      "Thrived in Fitbit's culture of innovation, collaboration, and a passion for health and wellness.",
-      "Successfully leveraged remote work flexibility, contributing to a diverse and inclusive workforce.",
-    ],
-  },
-
-  {
-    title: "Frontend Developer",
-    company_name: "Blue Bottle Coffee",
-    icon: blueBottleLogo,
-    iconBg: "#383E56",
-    date: "January 2020 - April 2022",
-    points: [
-      "Led the development and deployment of a new e-commerce platform, enhancing the online shopping experience for customers.",
-      "Implemented responsive and user-friendly interfaces using React.js, ensuring optimal performance across various devices.",
-      "Collaborated closely with UI/UX designers to translate design concepts into functional and aesthetically pleasing web applications.",
-      "Contributed to the optimization of website speed and performance, resulting in a 15% improvement in page load times.",
-      "Actively participated in sprint planning, daily stand-ups, and code reviews, fostering a collaborative and agile development environment.",
-      "Introduced and maintained a comprehensive testing strategy, reducing the number of post-release issues by 30%",
-      "Embraced the dynamic and creative culture at Blue Bottle Coffee, delivering solutions that align with the brand's identity and values.",
+      "Successfully competed and emerged as a finalist among 22,000 candidates during the HNG internship, a testament to my skills and dedication.",
+      "Applied expertise in HTML, CSS, and JavaScript to contribute significantly to the development of intuitive and visually appealing user interfaces.",
+      "Collaborated closely with a diverse team to translate design concepts into pixel-perfect and interactive websites, ensuring a seamless user experience.",
+      "Utilized cutting-edge technologies, including React.js, to enhance the functionality and performance of web applications.",
+      "Implemented version control using Git and GitHub, fostering a collaborative and organized development environment.",
+      "Stayed abreast of industry trends and best practices, actively incorporating them into projects to ensure they met the highest standards.",
+      "Demonstrated adaptability and problem-solving skills in the fast-paced and dynamic environment of the tech industry.",
     ],
   },
 ];
 
-export { techSkills, testimonials, projects, experiences };
+export const services = [
+  {
+    title: "React JS Developer",
+    icon: reactjs,
+  },
+
+  {
+    title: "Next JS Developer",
+    icon: nextjs,
+  },
+  {
+    title: "TypeScript Developer",
+    icon: typescript,
+  },
+  {
+    title: "JavaScript Developer",
+    icon: javascript,
+  },
+];

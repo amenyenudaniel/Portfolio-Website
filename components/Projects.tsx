@@ -1,11 +1,8 @@
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
-import otherPP from "../public/images/projects/other-projects.jpg";
 import { projects } from "@/constants";
-import Link from "next/link";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import { Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";

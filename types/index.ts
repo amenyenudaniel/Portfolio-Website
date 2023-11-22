@@ -38,3 +38,10 @@ export interface slideInProps {
   delay: number;
   duration: number;
 }
+
+export interface serviceCardProps {
+  index: number;
+  title: string;
+  icon: any;
+  darkmode: boolean;
+}

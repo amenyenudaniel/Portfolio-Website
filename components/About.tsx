@@ -1,5 +1,83 @@
-import { cardNames } from "@/constants";
-import { darkmodeProps } from "@/types";
+import { useEffect } from "react";
+import { services } from "@/constants";
+import { darkmodeProps, serviceCardProps } from "@/types";
+import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
+
+const fadeIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number
+) => {
+  return {
+    hidden: {
+      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
+      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: type,
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+    },
+  };
+};
+
+const ServiceCard = ({ index, title, icon, darkmode }: serviceCardProps) => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const element = document.getElementById(`service-card-${index}`);
+      const elementPosition = element.offsetTop;
+
+      if (scrollPosition > elementPosition - window.innerHeight / 1.5) {
+        controls.start("show");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [controls, index]);
+
+  return (
+    <div className="xs:w-[250px] w-full">
+      <motion.div
+        id={`service-card-${index}`}
+        initial="hidden"
+        animate={controls}
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className={
+          darkmode
+            ? "w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+            : "w-full green-pink-gradient p-[1px] rounded-[20px]"
+        }
+      >
+        <div className="bg-primary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+          <Image
+            src={icon}
+            alt="web-development"
+            className="w-[100px] h-[100px] object-contain"
+          />
+
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
 
 const About = ({ darkmode }: darkmodeProps) => {
   return (
@@ -45,18 +123,14 @@ const About = ({ darkmode }: darkmodeProps) => {
         reality.
       </p>
 
-      <div className="mt-[2rem] flex gap-[1rem] flex-wrap items-center sm:justify-start justify-center">
-        {cardNames.map((card) => (
-          <div
-            className={
-              darkmode
-                ? "w-[200px] h-[50px] rounded-2xl text-white border-secondary border-2 flex items-center justify-center text-[18px]"
-                : "w-[200px] h-[50px] rounded-2xl text-primary border-primary border-2 flex items-center justify-center text-[18px]"
-            }
-            key={card.id}
-          >
-            {card.title}
-          </div>
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard
+            key={service.title}
+            darkmode={darkmode}
+            index={index}
+            {...service}
+          />
         ))}
       </div>
     </section>

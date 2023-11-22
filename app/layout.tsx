@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-
+import Head from "next/head";
 import "./globals.css";
-import Footer from "@/components/Footer";
+
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Personal Portfolio",
   description: "My Personal Website",
 };
 
@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <body>
         <main>{children}</main>
       </body>

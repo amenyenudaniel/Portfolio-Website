@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import { motion, useAnimation } from "framer-motion";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -9,9 +10,50 @@ import { techSkills } from "@/constants";
 import Image from "next/image";
 import { darkmodeProps } from "@/types";
 
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.75, ease: "easeOut" },
+  },
+};
+
 const Skills = ({ darkmode }: darkmodeProps) => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      const element = document.getElementById("skills");
+
+      if (element) {
+        const elementTop = element.offsetTop;
+        const elementBottom = elementTop + element.offsetHeight;
+
+        const triggerOffset = 300;
+
+        if (scrollY > elementTop - triggerOffset && scrollY < elementBottom) {
+          controls.start("show");
+        } else {
+          controls.start("hidden");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [controls]);
+
   return (
-    <div className="padding pt-[8rem] " id="skills">
+    <motion.div
+      className="padding pt-[8rem] "
+      id="skills"
+      variants={fadeIn}
+      initial="hidden"
+      animate={controls}
+    >
       <div className="mb-[2rem]">
         <h3
           className={
@@ -71,7 +113,8 @@ const Skills = ({ darkmode }: darkmodeProps) => {
       >
         {techSkills.map((skill) => (
           <SwiperSlide key={skill.name}>
-            <div
+            <motion.div
+              variants={fadeIn}
               className={
                 darkmode
                   ? "w-[300px] h-[300px] bg-white flex items-center justify-center p-[1rem] flex-col rounded-[1rem] gap-[1rem] mb-[3rem] skills-card"
@@ -92,11 +135,11 @@ const Skills = ({ darkmode }: darkmodeProps) => {
               >
                 {skill.name}
               </h2>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

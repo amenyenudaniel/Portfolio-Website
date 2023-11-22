@@ -1,13 +1,44 @@
 import { experiences } from "@/constants";
 import { darkmodeProps } from "@/types";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import { useEffect } from "react";
+
+const fadeIn = (delay: number) => {
+  return {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: delay, duration: 0.75, ease: "easeOut" },
+    },
+  };
+};
 
 const Experience = ({ darkmode }: darkmodeProps) => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+      // Adjust this value based on your design and when you want the animation to start
+      const triggerOffset = 500;
+
+      if (scrollY > triggerOffset) {
+        controls.start("show");
+      } else {
+        controls.start("hidden");
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [controls]);
+
   return (
     <div className="padding pt-[9rem]" id="experience">
       <div className="text-center">
@@ -34,8 +65,11 @@ const Experience = ({ darkmode }: darkmodeProps) => {
       <div className="mt-20">
         <div className="flex flex-row flex-wrap justify-center gap-[2rem]">
           {experiences.map((experience, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={fadeIn(index * 0.5)}
+              initial="hidden"
+              animate={controls}
               className="bg-primary p-8 rounded-2xl w-[100%] md:w-[500px]"
             >
               <div className="w-full flex justify-center">
@@ -54,7 +88,6 @@ const Experience = ({ darkmode }: darkmodeProps) => {
                   {experience.company_name}
                 </p>
                 <p className="text-white font-medium mb-[1rem]">
-                  {" "}
                   {experience.date}
                 </p>
               </div>
@@ -69,7 +102,7 @@ const Experience = ({ darkmode }: darkmodeProps) => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
