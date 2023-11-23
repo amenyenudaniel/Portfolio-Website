@@ -10,6 +10,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Testimonies from "@/components/Testimonies";
 import Footer from "@/components/Footer";
+import Certificate from "@/components/Certificate";
 
 export default function Home() {
   const [darkmode, setDarkmode] = useState<boolean>(true);
@@ -46,6 +47,7 @@ export default function Home() {
         <Experience darkmode={darkmode} />
         <Skills darkmode={darkmode} />
         <Projects darkmode={darkmode} />
+        <Certificate darkmode={darkmode} />
         <Testimonies darkmode={darkmode} />
         <Contact darkmode={darkmode} />
         <Footer darkmode={darkmode} />

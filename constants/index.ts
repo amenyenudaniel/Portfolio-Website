@@ -29,6 +29,8 @@ import mkbhd from "../public/images/projects/mkbhd.png";
 import nike from "../public/images/projects/nike.png";
 import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
+import cert1 from "../public/images/certificates/cert1.png";
+import cert2 from "../public/images/certificates/cert2.jpeg";
 
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
@@ -379,5 +381,18 @@ export const services = [
   {
     title: "JavaScript Developer",
     icon: javascript,
+  },
+];
+
+export const certificatesData = [
+  {
+    title: "Meta Frontend Developer Certificate",
+    image: cert1,
+    view: "/pdf/pdf-cert.pdf",
+  },
+  {
+    title: "HNG Internship Finalist Certificate",
+    image: cert2,
+    view: "/images/certificates/cert2.jpeg",
   },
 ];
