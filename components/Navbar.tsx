@@ -1,8 +1,9 @@
+"use client";
 import { navLinks } from "@/constants";
 import { darkmodeProps } from "@/types";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import Toggle from "./Toggle";
@@ -20,8 +21,13 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
       setScrolled(false);
     }
   };
-
-  window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
