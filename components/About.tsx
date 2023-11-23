@@ -37,10 +37,12 @@ const ServiceCard = ({ index, title, icon, darkmode }: serviceCardProps) => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const element = document.getElementById(`service-card-${index}`);
-      const elementPosition = element.offsetTop;
 
-      if (scrollPosition > elementPosition - window.innerHeight / 1.5) {
-        controls.start("show");
+      if (element) {
+        const elementPosition = element.offsetTop;
+        if (scrollPosition > elementPosition - window.innerHeight / 1.5) {
+          controls.start("show");
+        }
       }
     };
 
