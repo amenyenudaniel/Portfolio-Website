@@ -24,7 +24,7 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
   window.addEventListener("scroll", handleScroll);
 
   const handleToggle = () => {
-    setToggle(!toggle);
+    setToggle((prev) => !prev);
     controls.start({
       opacity: 1,
       transition: { duration: 0.5 },

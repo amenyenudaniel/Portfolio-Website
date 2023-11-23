@@ -3,7 +3,7 @@ import { darkmodeProps } from "@/types";
 
 const Toggle = ({ darkmode, setDarkmode }: darkmodeProps) => {
   const handleToggle = () => {
-    setDarkmode(!darkmode);
+    setDarkmode((prev: any) => !prev);
   };
 
   return (
