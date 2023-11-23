@@ -49,7 +49,7 @@ export default function Home() {
         <Projects darkmode={darkmode} />
         <Certificate darkmode={darkmode} />
         <Testimonies darkmode={darkmode} />
-        <Contact darkmode={darkmode} />
+        <Contact />
         <Footer darkmode={darkmode} />
       </motion.div>
     </div>

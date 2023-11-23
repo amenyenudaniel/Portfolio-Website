@@ -1,28 +1,8 @@
 import { darkmodeProps, slideInProps } from "@/types";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
 
-const slideIn = ({ direction, type, delay, duration }: slideInProps) => {
-  return {
-    hidden: {
-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
-    },
-    show: {
-      x: 0,
-      y: 0,
-      transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
-        ease: "easeOut",
-      },
-    },
-  };
-};
-
-const Contact = ({ darkmode }: darkmodeProps) => {
+const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [form, setForm] = useState({
     name: "",
@@ -85,10 +65,7 @@ const Contact = ({ darkmode }: darkmodeProps) => {
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden justify-center padding pt-[8rem]`}
       id="contact"
     >
-      <motion.div
-        variants={slideIn("left", "tween", 0.2)}
-        className="flex-[0.75] bg-primary p-8 rounded-2xl"
-      >
+      <div className="flex-[0.75] bg-primary p-8 rounded-2xl">
         <p className={"sectionSubText text-secondary"}>Get in touch</p>
         <h3 className={"sectionHeadText text-white"}>Contact.</h3>
 
@@ -141,7 +118,7 @@ const Contact = ({ darkmode }: darkmodeProps) => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
     </div>
   );
 };
