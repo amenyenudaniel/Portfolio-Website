@@ -91,9 +91,7 @@ const Skills = ({ darkmode }: darkmodeProps) => {
           clickable: true,
           el: ".swiper-pagination",
         }}
-        navigation={{
-          clickable: true,
-        }}
+        navigation={{}}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
         breakpoints={{
