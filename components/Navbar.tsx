@@ -103,7 +103,7 @@ const Navbar = ({ darkmode, setDarkmode }: darkmodeProps) => {
         </div>
       </motion.nav>
       {toggle && (
-        <div className="md:hidden fixed top-[70px] bg-primary z-40 right-[60px] w-[150px] py-[20px] px-[20px] rounded-2xl ">
+        <div className="md:hidden fixed top-[70px] bg-primary z-100 right-[60px] w-[150px] py-[20px] px-[20px] rounded-2xl ">
           <ul className="list-none flex items-start flex-1 flex-col gap-4">
             {navLinks.map((nav) => (
               <li

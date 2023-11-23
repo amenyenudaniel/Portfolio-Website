@@ -1,6 +1,5 @@
 import { darkmodeProps } from "@/types";
 import React from "react";
-
 const Hero = ({ darkmode }: darkmodeProps) => {
   return (
     <section className="z-30 flex gap-[4rem] lg:gap-[0rem] flex-col lg:flex-row justify-between items-center padding pt-[10rem] lg:pt-[20%]">
@@ -23,15 +22,17 @@ const Hero = ({ darkmode }: darkmodeProps) => {
             I develop user interfaces and <br />
             web applications
           </p>
-          <button
-            className={
-              darkmode
-                ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
-                : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
-            }
-          >
-            Download CV
-          </button>
+          <a href={"/pdf/Resume.pdf"} download>
+            <button
+              className={
+                darkmode
+                  ? "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-white border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
+                  : "h-[40px] flex items-center justify-center p-[20px] rounded-[10px] text-[17px] text-primary border-2 border-violet mt-[20px] hover:bg-violet hover:text-white transition ease-out duration-700"
+              }
+            >
+              Download CV
+            </button>
+          </a>
         </div>
       </div>
       <div className="blob"></div>

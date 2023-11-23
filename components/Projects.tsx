@@ -147,7 +147,7 @@ const Projects = ({ darkmode }: darkmodeProps) => {
       </div>
 
       <div className="inline md:hidden">
-        <div className="padding pt-[8rem] " id="projects">
+        <div className="padding pt-[8rem]" id="projects">
           <div className="">
             <motion.div variants={textVariant(0.1)}>
               <p
