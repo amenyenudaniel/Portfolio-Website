@@ -210,7 +210,7 @@ export const projects = [
     ],
     image: "/images/projects/carent.png",
     source_code_link: "https://github.com/amenyenudaniel/Carent",
-    live_demo: "https://carhub-git-master-amenyenudaniel.vercel.app/",
+    live_demo: "https://carent-rho.vercel.app/",
   },
 
   {
@@ -271,7 +271,7 @@ export const projects = [
     ],
     image: "/images/projects/nike.png",
     source_code_link: "https://github.com/amenyenudaniel/Nike-Clone",
-    live_demo: "https://nike-clone-git-master-amenyenudaniel.vercel.app/",
+    live_demo: "https://nike-clone-pi.vercel.app/",
   },
 
   {
@@ -312,7 +312,7 @@ export const projects = [
     ],
     image: "/images/projects/metaverse.png",
     source_code_link: "https://github.com/amenyenudaniel/MetaVerse",
-    live_demo: "https://metaverse-git-master-amenyenudaniel.vercel.app/",
+    live_demo: "https://metaverse-inky-eta.vercel.app/",
   },
 
   {
