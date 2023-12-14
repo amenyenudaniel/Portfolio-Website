@@ -1,36 +1,6 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-
 import { projectProps } from "@/types";
 
-const fadeIn = (
-  direction: string,
-  type: string,
-  delay: number,
-  duration: number
-) => {
-  return {
-    hidden: {
-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-      opacity: 0,
-    },
-    show: {
-      x: 0,
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
-        ease: "easeOut",
-      },
-    },
-  };
-};
-
 const ProjectCard: React.FC<projectProps> = ({
-  index,
   name,
   description,
   tags,
@@ -49,7 +19,7 @@ const ProjectCard: React.FC<projectProps> = ({
         }
       >
         <div className="relative w-full h-[240px] skills-card">
-          <Image
+          <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl image-card"

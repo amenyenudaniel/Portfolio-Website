@@ -2,17 +2,6 @@ import { experiences } from "@/constants";
 import { darkmodeProps } from "@/types";
 import Image from "next/image";
 
-const fadeIn = (delay: number) => {
-  return {
-    hidden: { opacity: 0, y: 20 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: delay, duration: 0.75, ease: "easeOut" },
-    },
-  };
-};
-
 const Experience = ({ darkmode }: darkmodeProps) => {
   return (
     <div className="padding pt-[9rem]" id="experience">
