@@ -1,5 +1,3 @@
-// Skills Images
-
 import html from "../public/images/skills/html.png";
 import css from "../public/images/skills/css.png";
 import javascript from "../public/images/skills/javascript.png";
@@ -17,6 +15,7 @@ import figma from "../public/images/skills/figma.png";
 import api from "../public/images/skills/api.png";
 import github from "../public/images/skills/github.png";
 import hngLogo from "../public/images/company/HNGLOGO.jpeg";
+import filmjethub from "../public/images/company/filmjethub.png";
 
 // Project Images
 
@@ -31,6 +30,7 @@ import restaurant from "../public/images/projects/resturant.png";
 import youtube from "../public/images/projects/youtube.png";
 import cert1 from "../public/images/certificates/cert1.png";
 import cert2 from "../public/images/certificates/cert2.jpeg";
+import film from "../public/images/projects/filmje.png";
 
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
@@ -159,21 +159,48 @@ export const testimonials = [
 
 export const projects = [
   {
+    name: "FilmJetHub",
+    description:
+      "Elevating Entertainment Accessibility. Stream and download a diverse array of movies and TV shows effortlessly. Our user-friendly platform ensures a seamless experience, making FilmJetHub your go-to destination for on-demand, high-quality entertainment.",
+    tags: [
+      {
+        name: "Firebase",
+        color: "blue-text-gradient",
+      },
+
+      {
+        name: "Next JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: film,
+    source_code_link: "https://github.com/amenyenudaniel/FilmJetHub",
+    live_demo: "https://film-jet-hub.vercel.app/",
+  },
+  {
     name: "Car Rent",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers. Embarking on the road of innovation, my rent car website redefines convenience. ",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
 
       {
-        name: "next js",
+        name: "Next JS",
         color: "pink-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "green-text-gradient",
       },
       {
@@ -192,7 +219,7 @@ export const projects = [
       "Presenting my YouTube clone: a React and Material-UI marvel. I recreated YouTube's essence—responsive design, video playback, and interactive elements—showcasing my UI/UX and front-end skills effectively. ",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
@@ -210,12 +237,12 @@ export const projects = [
       "Indulge your taste buds in a culinary journey through my Gericht restaurant website. Capturing flavors and ambiance, I've crafted a virtual dining experience using the React JS library.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
 
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -230,15 +257,15 @@ export const projects = [
       "Crafted in homage to Nike's dynamic appeal, my website clone encapsulates the brand's energy and innovation. I've mirrored Nike's essence and strive to amplify user engagement.",
     tags: [
       {
-        name: "nextjs",
+        name: "Next JS",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
@@ -253,11 +280,11 @@ export const projects = [
       "Experience the essence of MKBHD's tech world through my MKHHD clone Web Application. Dive into tech elegance with my MKBHD website clone. Immerse in sleek design and content using React JS",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -271,15 +298,15 @@ export const projects = [
       "My Metaverse website. Socialize seamlessly, and craft infinite virtual realms. Step into the future of interaction, where imagination knows no bounds. Join us and shape the Metaverse phenomenon today with this Metaverse crafted website.",
     tags: [
       {
-        name: "react js",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind css",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
       {
-        name: "next js",
+        name: "Next JS",
         color: "blue-text-gradient",
       },
     ],
@@ -294,11 +321,11 @@ export const projects = [
       "Where your financial aspirations come to life. With secure and user-friendly online banking and a commitment to your financial well-being, we're your partner on the path to prosperity. Join us in redefining banking convenience and excellence.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -312,12 +339,12 @@ export const projects = [
       "Navigate the world of cryptocurrency effortlessly with my Bitcoin app. Seamlessly track prices, manage your portfolio, and stay updated on market trends. Built with user-centric design and advanced coding, it offers a secure and streamlined experience.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
 
       {
-        name: "css",
+        name: "CSS",
         color: "green-text-gradient",
       },
     ],
@@ -332,11 +359,11 @@ export const projects = [
       "Immerse yourself in the world of innovation with my meticulously crafted Google Store clone. Capturing the essence of the original, I've recreated the user-friendly interface using React JS. Browse an array of cutting-edge products at my google store clone.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -360,6 +387,22 @@ export const experiences = [
       "Implemented version control using Git and GitHub, fostering a collaborative and organized development environment.",
       "Stayed abreast of industry trends and best practices, actively incorporating them into projects to ensure they met the highest standards.",
       "Demonstrated adaptability and problem-solving skills in the fast-paced and dynamic environment of the tech industry.",
+    ],
+  },
+
+  {
+    title: "CEO & Founder, FilmJetHub | Frontend Developer",
+    company_name: "FilmJetHub",
+    icon: filmjethub,
+    iconBg: "#383E56",
+    date: "July 2022 - Present",
+    points: [
+      "Pioneered the conceptualization, development, and launch of FilmJetHub, a leading online platform for streaming and downloading a vast library of TV shows, movies, and cartoons.",
+      "Orchestrated end-to-end website development, applying advanced frontend development skills to create an intuitive and visually appealing user interface, ensuring an exceptional user experience.",
+      "Spearheaded business development initiatives, establishing key partnerships with major film studios, content creators, and distributors, expanding the platform's content catalog.",
+      "Implemented responsive design principles, enhancing cross-device accessibility and fostering a seamless streaming experience for users on various platforms, including desktops, tablets, and mobile devices.",
+      "Engineered personalized user features, such as watchlists and recommendations, utilizing data-driven insights to enhance user retention and satisfaction.",
+      "Implemented robust security measures to protect user data and ensure compliance with industry standards, establishing FilmJetHub as a trustworthy and secure entertainment platform.",
     ],
   },
 ];
