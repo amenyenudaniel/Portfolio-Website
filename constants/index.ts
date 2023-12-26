@@ -124,10 +124,10 @@ export const techSkills = [
 export const testimonials = [
   {
     testimonial:
-      "Exceptional frontend work! Danny at HNG Internship crafts stunning designs with precision, exceeding expectations consistently. A top-tier developer",
-    name: "Chinaza Obiekwe",
-    designation: "IT Project Manager at Compound",
-    company: "HNG Internship",
+      "Danny is a coding wizard! They tackled the challenges of the 21st Century Revival website with impressive technical expertise and quick thinking. Their skills are truly magical, and they solved complex bugs like a pro. I'm thrilled with the final product and grateful for their dedication.",
+    name: "Boss",
+    designation: "Manager",
+    company: "21st Century Revival",
   },
   {
     testimonial:
