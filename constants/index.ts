@@ -16,21 +16,9 @@ import api from "../public/images/skills/api.png";
 import github from "../public/images/skills/github.png";
 import hngLogo from "../public/images/company/HNGLOGO.jpeg";
 import filmjethub from "../public/images/company/filmjethub.png";
-
-// Project Images
-
-import carent from "../public/images/projects/carent.png";
-import bitcoin from "../public/images/projects/bitcoin.png";
-import google from "../public/images/projects/google.png";
-import hoobank from "../public/images/projects/hoobank.png";
-import metaverse from "../public/images/projects/metaverse.png";
-import mkbhd from "../public/images/projects/mkbhd.png";
-import nike from "../public/images/projects/nike.png";
-import restaurant from "../public/images/projects/resturant.png";
-import youtube from "../public/images/projects/youtube.png";
+import logo21st from "../public/images/company/logo.jpg";
 import cert1 from "../public/images/certificates/cert1.png";
 import cert2 from "../public/images/certificates/cert2.jpeg";
-import film from "../public/images/projects/filmje.png";
 
 export const cardNames = [
   { id: 1, title: "Frontend Developer" },
@@ -374,19 +362,17 @@ export const projects = [
 ];
 export const experiences = [
   {
-    title: "Frontend Developer Intern",
-    company_name: "HNG Company",
-    icon: hngLogo,
+    title: "Frontend Developer",
+    company_name: "21st Century Revival",
+    icon: logo21st,
     iconBg: "#383E56",
-    date: "August 2023 - November 2023",
+    date: "October 2021 - Present",
     points: [
-      "Successfully competed and emerged as a finalist among 22,000 candidates during the HNG internship, a testament to my skills and dedication.",
-      "Applied expertise in HTML, CSS, and JavaScript to contribute significantly to the development of intuitive and visually appealing user interfaces.",
-      "Collaborated closely with a diverse team to translate design concepts into pixel-perfect and interactive websites, ensuring a seamless user experience.",
-      "Utilized cutting-edge technologies, including React.js, to enhance the functionality and performance of web applications.",
-      "Implemented version control using Git and GitHub, fostering a collaborative and organized development environment.",
-      "Stayed abreast of industry trends and best practices, actively incorporating them into projects to ensure they met the highest standards.",
-      "Demonstrated adaptability and problem-solving skills in the fast-paced and dynamic environment of the tech industry.",
+      "Scripted a sleek cinematic experience: Led the front-end development of 21st Century Revival's website, weaving Next.js and TypeScript magic to craft a lightning-fast, user-friendly interface that immerses visitors in the world of their innovative contact lenses.",
+      "Tailored interactions for every pixel: Championed UI/UX best practices with Tailwind CSS, ensuring pixel-perfect layouts and fluid, intuitive interactions that adapt flawlessly across all devices.",
+      "Bridged the code-creativity gap: Collaborated closely with design and marketing teams, translating their vision into stunning visuals and dynamic functionalities that elevate the brand's storytelling to new heights.",
+      "Championed performance as a mantra: Optimized Next.js server-side rendering and code splitting techniques to achieve blazing-fast loading times, ensuring a seamless and engaging experience for every visitor.",
+      "Earned rave reviews, fueled by codemanship: Received stellar feedback from colleagues and management, recognizing my dedication to clean, maintainable code, proactive problem-solving, and exceeding expectations with every feature delivered",
     ],
   },
 
@@ -403,6 +389,22 @@ export const experiences = [
       "Implemented responsive design principles, enhancing cross-device accessibility and fostering a seamless streaming experience for users on various platforms, including desktops, tablets, and mobile devices.",
       "Engineered personalized user features, such as watchlists and recommendations, utilizing data-driven insights to enhance user retention and satisfaction.",
       "Implemented robust security measures to protect user data and ensure compliance with industry standards, establishing FilmJetHub as a trustworthy and secure entertainment platform.",
+    ],
+  },
+  {
+    title: "Frontend Developer Intern",
+    company_name: "HNG Company",
+    icon: hngLogo,
+    iconBg: "#383E56",
+    date: "August 2023 - November 2023",
+    points: [
+      "Successfully competed and emerged as a finalist among 22,000 candidates during the HNG internship, a testament to my skills and dedication.",
+      "Applied expertise in HTML, CSS, and JavaScript to contribute significantly to the development of intuitive and visually appealing user interfaces.",
+      "Collaborated closely with a diverse team to translate design concepts into pixel-perfect and interactive websites, ensuring a seamless user experience.",
+      "Utilized cutting-edge technologies, including React.js, to enhance the functionality and performance of web applications.",
+      "Implemented version control using Git and GitHub, fostering a collaborative and organized development environment.",
+      "Stayed abreast of industry trends and best practices, actively incorporating them into projects to ensure they met the highest standards.",
+      "Demonstrated adaptability and problem-solving skills in the fast-paced and dynamic environment of the tech industry.",
     ],
   },
 ];
